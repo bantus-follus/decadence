@@ -8,7 +8,7 @@
 ;html
     ;head
         ;meta(charset "utf-8");
-        ;link(href "/decadence/css", rel "stylesheet");
+        ;link(href "/app/decadence/css", rel "stylesheet");
     ==
     ;body
          ::  Stats
@@ -88,14 +88,14 @@
                     ;div(id "null");
             ::  Deal
                 ;+  ?~  setone
-                    ?:  (gth game 0)
+                    ?:  ?&  (gth game 0)  !=(message "Demon Called: 'Mesh-00: Lurgo (Legba). (Terminal) Initiator. (Clicks Gt-00). Pitch Ana-1. Net-Span 1::0. Amphidemon of Openings. (The Door of Doors). Cipher Gt-01, Gt-10. 1st Door (The Pod) [Mercury], Dorsal. 1st Phase-limit. Decadology. C/tp-#7, Mj+ [7C]. Rt-1:[1890] Spinal-voyage (fate line), programming.'")  ==
                         ;div(class "menu_button", event "/click/deal")
                             ;h2: Deal
                         ==
                     ;div(id "null");
                     ;div(id "null");
             ::  Submit
-                ;+  ?:  (gth game 0)
+                ;+  ?:  ?&  (gth game 0)  !=(message "Demon Called: 'Mesh-00: Lurgo (Legba). (Terminal) Initiator. (Clicks Gt-00). Pitch Ana-1. Net-Span 1::0. Amphidemon of Openings. (The Door of Doors). Cipher Gt-01, Gt-10. 1st Door (The Pod) [Mercury], Dorsal. 1st Phase-limit. Decadology. C/tp-#7, Mj+ [7C]. Rt-1:[1890] Spinal-voyage (fate line), programming.'")  ==
                         ;div(class "menu_button", event "/click/submit")
                             ;h2: Submit
                         ==

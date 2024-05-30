@@ -50,7 +50,7 @@
         ?+  method.request.req  [(make-400:mast eyre-id) state]
             %'GET'
             =/  url=path  (parse-url:mast url.request.req)
-            ?:  =(/decadence/css url)
+            ?:  =(/app/decadence/css url)
                 [(make-css-response:mast eyre-id stylesheet) state]
             =/  new-display  (rig:mast routes url state)
             :-  (plank:mast "decadence" /display-updates our.bowl eyre-id new-display)
@@ -134,19 +134,19 @@
                                   =/  shitcard=darc       [%null .0 %.n]
                                   ?-  subdecadence
                                       %.y  ?.  =(matchsum .9)
-                                                  =/  new-state  state(message "In Subdecadence, matches must sum to 9")
+                                                  =/  new-state  state(message "In Subdecadence matches must sum to 9")
                                                   =/  new-display  (rig:mast routes current-url:front new-state)
                                                   :-  [(gust:mast /display-updates display:front new-display) ~]
-                                                  state(message "In Subdecadence, matches must sum to 9", front [new-display current-url:front])
+                                                  state(message "In Subdecadence matches must sum to 9", front [new-display current-url:front])
                                            =/  new-state  state(gamescore (add:rs scoregain gamescore), setone (snap setone setoneindex shitcard), settwo (snap settwo settwoindex shitcard), selection [~ ~], message "Matched {`tape`(slag 1 "{<val.setonecard>}")} and {`tape`(slag 1 "{<val.settwocard>}")}")
                                            =/  new-display  (rig:mast routes current-url:front new-state)
                                            :-  [(gust:mast /display-updates display:front new-display) ~]
                                            state(gamescore (add:rs scoregain gamescore), setone (snap setone setoneindex shitcard), settwo (snap settwo settwoindex shitcard), selection [~ ~], message "Matched {`tape`(slag 1 "{<val.setonecard>}")} and {`tape`(slag 1 "{<val.settwocard>}")}", front [new-display current-url:front])
                                       %.n  ?.  =(matchsum .10)
-                                                 =/  new-state  state(message "In Decadence, matches must sum to to 10")
+                                                 =/  new-state  state(message "In Decadence matches must sum to to 10")
                                                  =/  new-display  (rig:mast routes current-url:front new-state)
                                                  :-  [(gust:mast /display-updates display:front new-display) ~]
-                                                 state(message "In Decadence, matches must sum to to 10", front [new-display current-url:front])
+                                                 state(message "In Decadence matches must sum to to 10", front [new-display current-url:front])
                                            =/  new-state  state(gamescore (add:rs scoregain gamescore), setone (snap setone setoneindex shitcard), settwo (snap settwo settwoindex shitcard), selection [~ ~], message "Matched {`tape`(slag 1 "{<val.setonecard>}")} and {`tape`(slag 1 "{<val.settwocard>}")}")
                                            =/  new-display  (rig:mast routes current-url:front new-state)
                                            :-  [(gust:mast /display-updates display:front new-display) ~]
