@@ -1,1 +1,1 @@
-barebones decadence (CCRU pandemonium)
+the classic family card game

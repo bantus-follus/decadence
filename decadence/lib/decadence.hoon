@@ -1,4 +1,5 @@
 /-  *decadence
+/+  playingcards
 |%
 ++  valid-check
     |=  [setonecard=darc settwocard=darc subdecadence=?]
@@ -23,4 +24,21 @@
     |=  pulldarc=darc
     ^-  @rs
         val.pulldarc
+++  remove-cards
+    |=  [currentdeck=deck cardstoremove=deck]
+    ^-  deck
+    ~&  cardstoremove
+    =/  cardstoremove  (turn cardstoremove flipcardfacedown.playingcards)
+    =/  i  0
+    |-
+    ~&  [i (lent cardstoremove) (lent currentdeck)]
+    ?:  =(i (lent cardstoremove))
+        currentdeck
+    =/  cardtoremove  (snag i cardstoremove)
+    =/  index         (find `(list darc)`[cardtoremove ~] currentdeck)
+    %=  $
+        i  +(i)
+        currentdeck    ?~  index  currentdeck  (oust [(need index) 1] currentdeck)
+    ==
+::  frontend
 --

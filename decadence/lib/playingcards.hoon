@@ -65,4 +65,11 @@
   |=  flippingcard=darc
   ^-  darc
   [sut.flippingcard val.flippingcard %.y]
+
+++  flipcardfacedown
+  |=  flippingcard=darc
+  ^-  darc
+  ?:  =(faceup.flippingcard %.n)
+      flippingcard
+  [sut.flippingcard val.flippingcard %.n]
 --
