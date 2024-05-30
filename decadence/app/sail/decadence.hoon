@@ -1,6 +1,5 @@
 /-  decadence
 /+  *decadence
-/*  spine  %png  /app/sail/assets/spine1/png
 |=  state=state-0.decadence
 =,  state
 ^.  manx
