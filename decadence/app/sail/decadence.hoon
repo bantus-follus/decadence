@@ -8,7 +8,7 @@
 ;html
     ;head
         ;meta(charset "utf-8");
-        ;link(href "/app/decadence/css", rel "stylesheet");
+        ;link(href "/apps/decadence/css", rel "stylesheet");
     ==
     ;body
          ::  Stats

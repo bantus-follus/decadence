@@ -14,13 +14,13 @@
     def   ~(. (default-agent this %.n) bowl)
     io    ~(. agentio bowl)
     routes  %-  limo  :~
-                      :-  /app/decadence  frontend
+                      :-  /apps/decadence  frontend
                       ==
 ::
 ++  on-init
     ^-  (quip card _this)
     :_  this
-    [(~(arvo pass:io /bind) %e %connect `/'app'/'decadence' %decadence) ~]
+    [(~(arvo pass:io /bind) %e %connect `/'apps'/'decadence' %decadence) ~]
 ++  on-save
     ^-  vase
     !>(state)
@@ -50,7 +50,7 @@
         ?+  method.request.req  [(make-400:mast eyre-id) state]
             %'GET'
             =/  url=path  (parse-url:mast url.request.req)
-            ?:  =(/app/decadence/css url)
+            ?:  =(/apps/decadence/css url)
                 [(make-css-response:mast eyre-id stylesheet) state]
             =/  new-display  (rig:mast routes url state)
             :-  (plank:mast "decadence" /display-updates our.bowl eyre-id new-display)

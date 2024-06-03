@@ -2,7 +2,7 @@
   title+'Decadence'
   info+'The classic family card game.'
   color+0x38.761d
-  site+/app/decadence
+  site+/apps/decadence
   image+'https://schizohost.nyc3.cdn.digitaloceanspaces.com/decadence/numogram'
   base+'decadence'
   version+[1 0 0]

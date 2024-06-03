@@ -27,14 +27,14 @@ body {
     background-color: lightgrey;
     height: 30px;
     width:  700px;
-    border: 2px solid black;
+    border: 2px solid green;
     margin: 15px;
 }
 
 #game_area {
     display: flex;
     margin: 15px;
-    border: 2px solid black;
+    border: 2px solid green;
     padding: 10px;
     background-color: #f0f0f0;
     background-image: linear-gradient(90deg, #e0e0e0 25%, transparent 25%, transparent 50%, #e0e0e0 50%, #e0e0e0 75%, transparent 75%, transparent);
@@ -71,12 +71,12 @@ body {
     background-size: 60px 60px;
     padding: 10px;
     margin: 15px;
-    border: 2px solid black;
+    border: 2px solid green;
 }
 .carddisplay {
     width: 50px;
     height: 100px;
-    border: 2px solid black;
+    border: 2px solid green;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -96,7 +96,7 @@ body {
 .carddisplay2 {
     width: 50px;
     height: 100px;
-    border: 2px solid black;
+    border: 2px solid green;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -120,7 +120,7 @@ body {
     margin-left: var(--overlap-amount);
     width: 50px;
     height: 100px;
-    border: 2px solid black;
+    border: 2px solid green;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -142,9 +142,10 @@ body {
 
 
 .empty {
+    box-sizing: border-box;
     width: 50px;
     height: 100px;
-    border: 2px solid black;
+    border: 2px solid green;
     background-color: darkgrey;
 }
 
@@ -171,7 +172,7 @@ body {
     grid-template-rows: repeat(4, auto);
     justify-items: center;
     align-items: center;
-    border: 2px solid #000;
+    border: 2px solid green;
     padding: 10px;
     background-color: #f0f0f0;
     background-image: linear-gradient(45deg, #e0e0e0 25%, transparent 25%, transparent 50%, #e0e0e0 50%, #e0e0e0 75%, transparent 75%, transparent);
@@ -268,7 +269,7 @@ body {
     text-align: center;
     justify-content: center;
     align-items: center;
-    border: 2px solid #000;
+    border: 2px solid green;
     box-sizing: border-box;
     background-color: #f0f0f0;
     margin: 10px;
